@@ -19,6 +19,9 @@ class TestCircle:
     def test_perimeter(self):
         assert self.circle.perimeter() == 2 * math.pi * self.circle.radius
 
+    def test_not_equal_area(self, my_rectangle):
+        assert self.circle.area() != my_rectangle.area()
+
 # poetry run pytest -s tests/class-based-tests.py
 
 # ================== test session starts ==================
